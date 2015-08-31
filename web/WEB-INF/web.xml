@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>doctorListServlet</servlet-name>
+        <servlet-class>ua.alex.servlet.view.DoctorListServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>addDoctorServlet</servlet-name>
+        <servlet-class>ua.alex.servlet.add.AddDoctorServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>doctorEditServlet</servlet-name>
+        <servlet-class>ua.alex.servlet.edit.DoctorEditServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>doctorDeleteServlet</servlet-name>
+        <servlet-class>ua.alex.servlet.delete.DoctorDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>petListServlet</servlet-name>
+        <servlet-class>ua.alex.servlet.view.PetListServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>addPetServlet</servlet-name>
+        <servlet-class>ua.alex.servlet.add.AddPetServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>petEditServlet</servlet-name>
+        <servlet-class>ua.alex.servlet.edit.PetEditServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>petDeleteServlet</servlet-name>
+        <servlet-class>ua.alex.servlet.delete.PetDeleteServlet</servlet-class>
+    </servlet>
+
+
+
+
+
+    <servlet-mapping>
+        <servlet-name>doctorListServlet</servlet-name>
+        <url-pattern>/doctor/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>addDoctorServlet</servlet-name>
+        <url-pattern>/doctor/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>doctorEditServlet</servlet-name>
+        <url-pattern>/doctor/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>doctorDeleteServlet</servlet-name>
+        <url-pattern>/doctor/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>petListServlet</servlet-name>
+        <url-pattern>/pet/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>addPetServlet</servlet-name>
+        <url-pattern>/pet/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>petEditServlet</servlet-name>
+        <url-pattern>/pet/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>petDeleteServlet</servlet-name>
+        <url-pattern>/pet/delete</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>
