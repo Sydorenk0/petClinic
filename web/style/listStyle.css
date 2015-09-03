@@ -1,0 +1,34 @@
+body {
+    background: #efefef;
+    margin: 2px 2px 2px 5px ;
+    padding: 5px;
+    margin-top: 25px;
+    text-align: left;
+    font: normal 14px, "Arial", Times, serif;
+    color: #222;
+    border: none;
+}
+legend {
+    font: normal 20px Verdana, "Arial", Helvetica, sans-serif;
+    text-shadow: 0 1px 1px #fff;
+    letter-spacing: -1px;
+    color: #273953;
+}
+
+a {
+    font: normal 16px Georgia, "Times New Roman", Times, serif;
+    color: blue;
+}
+td a {
+    font: normal 14px Georgia, "Times New Roman", Times, serif;
+    color: blue;
+}
+table {
+    border: solid 3px darkblue;
+    padding: 3px;
+}
+
+th, td {
+    border: solid 1px black;
+    padding: 2px 5px;
+}

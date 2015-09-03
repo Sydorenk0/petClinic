@@ -1,0 +1,58 @@
+body {
+    background: #efefef;
+    margin: 0px;
+    padding: 0;
+    border: none;
+    text-align: center;
+    font: normal 14px, "Arial", Times, serif;
+    color: #222;
+}
+#content {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0;
+    text-align: left;
+}
+fieldset {
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+fieldset legend {
+    font: normal 20px Verdana, "Arial", Helvetica, sans-serif;
+    text-shadow: 0 1px 1px #fff;
+    letter-spacing: -1px;
+    color: black;
+}
+input {
+    padding: 5px;
+}
+label {
+    cursor: pointer;
+}
+.block {
+    display: block;
+}
+#send {
+    background: #3f5a81;
+    width: 30%;
+    border: 2px solid #0F1620;
+    font: bold 14px Verdana, sans-serif;
+    color: #fafafa;
+    text-shadow: 1px 1px 1px #0F1620;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+#send:hover {
+    background: #4d76b1;
+    border: 2px solid #253750;
+    color: #fff;
+}
+#send:active {
+    text-indent: -10px;
+}

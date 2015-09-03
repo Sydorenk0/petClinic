@@ -1,29 +1,40 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-
-
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/style/add.css" type="text/css" media="screen" />
     <title>ADD PET</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
-
 </head>
+
 <body>
-
+<div id = "content">
 <form action="/pet/add" method="post">
+    <fieldset>
+        <legend>PET LIST</legend>
     <input type="hidden" name="id" value="${pet.id}"/> <br/>
-    Species: <input type="text" name="species" value="${pet.species}"/> <br/>
-    Alias: <input type="text" name="alias" value="${pet.alias}"/> <br/>
-    Age: <input type="text" name="age" value="${pet.age}"/> <br/>
-    <input type="submit" name="add" value="Add"/>
-</form>
+        <p>
+            <label for="species" class="block">Species:</label>
+            <input type="text" name="species"  id = "species" value="${pet.species}"/>
+        </p>
 
+        <p>
+            <label class = "block">Alias:</label>
+            <input type="text" name="alias" value="${pet.alias}"/> <br/>
+        </p>
+        <p>
+            <label class = "block"> Age:</label>
+            <input type="text" name="age" value="${pet.age}"/> <br/>
+        </p>
+        <p>
+            <button type="submit" name="add" id = "send" value="Add">ADD</button>
+        </p>
+    </fieldset>
+</form>
+</div><!-- content -->
 </body>
 </html>

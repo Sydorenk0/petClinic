@@ -1,4 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <%--
   Created by IntelliJ IDEA.
   User: Alex
@@ -9,26 +11,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title></title>
-  <style>
-    table, th, td {
-      border: 1px solid black;
-    }
-  </style>
-
-</head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link rel="stylesheet" href="/style/listStyle.css" type="text/css" media="screen" />
+  <title>Pet List</title>
+  <script src="http://yastatic.net/jquery/1.6.4/jquery.min.js"></script>
+</head >
 <body>
-PET LIST
+<legend>PET LIST</legend>
 
 <table>
   <thead>
-  <tr>
+    <tr>
     <th>Id</th>
     <th>Species</th>
     <th>Alias</th>
     <th>Age</th>
     <th>Действие</th>
-  </tr>
+    </tr>
+
 
   </thead>
   <tbody>
@@ -49,5 +49,6 @@ PET LIST
 </table>
 
 <a href=${pageContext.servletContext.contextPath}"/addPet.jsp">add new pet</a>
+<script type="text/javascript" src="indexScript.js" charset="utf-8"></script>
 </body>
 </html>
