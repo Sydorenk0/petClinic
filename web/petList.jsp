@@ -11,41 +11,41 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <link rel="stylesheet" href="/style/listStyle.css" type="text/css" media="screen" />
-  <title>Pet List</title>
-  <script src="http://yastatic.net/jquery/1.6.4/jquery.min.js"></script>
-</head >
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" href="/style/listStyle.css" type="text/css" media="screen"/>
+    <title>Pet List</title>
+    <script src="http://yastatic.net/jquery/1.6.4/jquery.min.js"></script>
+</head>
 <body>
 <legend>PET LIST</legend>
 
 <table>
-  <thead>
+    <thead>
     <tr>
-    <th>Id</th>
-    <th>Species</th>
-    <th>Alias</th>
-    <th>Age</th>
-    <th>Действие</th>
+        <th>Id</th>
+        <th>Species</th>
+        <th>Alias</th>
+        <th>Age</th>
+        <th>Действие</th>
     </tr>
 
 
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
 
-  <c:forEach items="${requestScope.petList}" var="pet">
-    <tr>
-      <td><c:out value="${pet.id}"></c:out></td>
-      <td><c:out value="${pet.species}"></c:out></td>
-      <td><c:out value="${pet.alias}"></c:out></td>
-      <td><c:out value="${pet.age}"></c:out></td>
-      <td>
-        <a href ="${pageContext.servletContext.contextPath}/pet/edit?id=${pet.id}">Edit</a>
-        <a href ="${pageContext.servletContext.contextPath}/pet/delete?id=${pet.id}">Delete</a>
-      </td>
-    </tr>
-  </c:forEach>
-  </tbody>
+    <c:forEach items="${requestScope.petList}" var="pet">
+        <tr>
+            <td><c:out value="${pet.id}"></c:out></td>
+            <td><c:out value="${pet.species}"></c:out></td>
+            <td><c:out value="${pet.alias}"></c:out></td>
+            <td><c:out value="${pet.age}"></c:out></td>
+            <td>
+                <a href="${pageContext.servletContext.contextPath}/pet/edit?id=${pet.id}">Edit</a>
+                <a href="${pageContext.servletContext.contextPath}/pet/delete?id=${pet.id}">Delete</a>
+            </td>
+        </tr>
+    </c:forEach>
+    </tbody>
 </table>
 
 <a href=${pageContext.servletContext.contextPath}"/addPet.jsp">add new pet</a>

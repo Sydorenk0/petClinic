@@ -1,6 +1,6 @@
 body {
     background: #efefef;
-    margin: 2px 2px 2px 5px ;
+    margin: 2px 2px 2px 5px;
     padding: 5px;
     margin-top: 25px;
     text-align: left;
@@ -8,6 +8,7 @@ body {
     color: #222;
     border: none;
 }
+
 legend {
     font: normal 20px Verdana, "Arial", Helvetica, sans-serif;
     text-shadow: 0 1px 1px #fff;
@@ -19,10 +20,12 @@ a {
     font: normal 16px Georgia, "Times New Roman", Times, serif;
     color: blue;
 }
+
 td a {
     font: normal 14px Georgia, "Times New Roman", Times, serif;
     color: blue;
 }
+
 table {
     border: solid 3px darkblue;
     padding: 3px;

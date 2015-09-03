@@ -10,39 +10,39 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <link rel="stylesheet" href="/style/listStyle.css" type="text/css" media="screen" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" href="/style/listStyle.css" type="text/css" media="screen"/>
     <title></title>
-  </head>
+</head>
 <body>
 <legend>DOCTOR LIST</legend>
 
 <table>
-  <thead>
-  <tr>
-    <th>Id</th>
-    <th>firstName</th>
-    <th>lastName</th>
-    <th>specializ</th>
-    <th>Действие</th>
-  </tr>
-
-  </thead>
-  <tbody>
-
-  <c:forEach items="${requestScope.doctorList}" var="doctor">
+    <thead>
     <tr>
-      <td><c:out value="${doctor.id}"></c:out></td>
-      <td><c:out value="${doctor.firstName}"></c:out></td>
-      <td><c:out value="${doctor.lastName}"></c:out></td>
-      <td><c:out value="${doctor.specializ}"></c:out></td>
-      <td>
-        <a href ="${pageContext.servletContext.contextPath}/doctor/edit?id=${doctor.id}">Edit</a>
-        <a href ="${pageContext.servletContext.contextPath}/doctor/delete?id=${doctor.id}">Delete</a>
-      </td>
+        <th>Id</th>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>specializ</th>
+        <th>Действие</th>
     </tr>
-  </c:forEach>
-  </tbody>
+
+    </thead>
+    <tbody>
+
+    <c:forEach items="${requestScope.doctorList}" var="doctor">
+        <tr>
+            <td><c:out value="${doctor.id}"></c:out></td>
+            <td><c:out value="${doctor.firstName}"></c:out></td>
+            <td><c:out value="${doctor.lastName}"></c:out></td>
+            <td><c:out value="${doctor.specializ}"></c:out></td>
+            <td>
+                <a href="${pageContext.servletContext.contextPath}/doctor/edit?id=${doctor.id}">Edit</a>
+                <a href="${pageContext.servletContext.contextPath}/doctor/delete?id=${doctor.id}">Delete</a>
+            </td>
+        </tr>
+    </c:forEach>
+    </tbody>
 </table>
 
 <a href=${pageContext.servletContext.contextPath}"/addDoctor.jsp">add new doctor</a>
